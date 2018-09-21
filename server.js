@@ -24,13 +24,13 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use((req, res, next) => {
-    res.render('maintenance.hbs', {
-        pageTitle: 'Maintenance',
-        maintenanceMessage: 'Sorry, we are in maintenance mode.'
-        //currentYear: new Date().getFullYear()
-    });
-});
+// app.use((req, res, next) => {
+//     res.render('maintenance.hbs', {
+//         pageTitle: 'Maintenance',
+//         maintenanceMessage: 'Sorry, we are in maintenance mode.'
+//         //currentYear: new Date().getFullYear()
+//     });
+// });
 
 hbs.registerHelper('getCurrentYear', () => {
     return new Date().getFullYear();
